@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Computer & Administrative Support</title>
+<style>
+:root{
+  --olive:#66724b;
+  --olive-dark:#4d5937;
+  --cream:#f7f4ec;
+  --white:#ffffff;
+  --text:#283026;
+  --muted:#687064;
+  --line:#dfe3d7;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:var(--cream);
+  line-height:1.6;
+}
+.container{max-width:1050px;margin:auto;padding:0 24px}
+nav{
+  position:sticky;top:0;z-index:10;
+  background:rgba(247,244,236,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(8px);
+}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
+.logo{font-weight:800;letter-spacing:.5px;color:var(--olive-dark)}
+nav a{color:var(--text);text-decoration:none;margin-left:20px;font-size:14px}
+.hero{padding:90px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center}
+.badge{
+  display:inline-block;padding:7px 12px;border-radius:999px;
+  background:#e5eadc;color:var(--olive-dark);font-size:13px;font-weight:700;
+}
+h1{font-size:48px;line-height:1.08;margin:18px 0}
+h2{font-size:30px;margin:0 0 12px}
+h3{margin:8px 0}
+.lead{font-size:19px;color:var(--muted);max-width:680px}
+.btn{
+  display:inline-block;margin-top:18px;padding:12px 18px;border-radius:10px;
+  background:var(--olive);color:white;text-decoration:none;font-weight:700;
+}
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:18px;
+  padding:26px;box-shadow:0 10px 30px rgba(50,60,40,.06);
+}
+.profile-card{text-align:center}
+.avatar{
+  width:110px;height:110px;border-radius:50%;margin:0 auto 15px;
+  background:#e5eadc;display:flex;align-items:center;justify-content:center;
+  font-size:42px;color:var(--olive-dark);font-weight:800;
+}
+section{padding:70px 0}
+.section-head{margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skill{padding:18px;background:white;border:1px solid var(--line);border-radius:14px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.project h3{margin-top:0}
+.project p{color:var(--muted)}
+.tag{
+  display:inline-block;padding:5px 9px;border-radius:999px;
+  background:#eef1e9;color:var(--olive-dark);font-size:12px;margin:3px;
+}
+ul{padding-left:20px}
+.contact{background:var(--olive-dark);color:white}
+.contact p{color:#edf1e8}
+.contact a{color:white}
+footer{text-align:center;padding:24px;color:var(--muted);font-size:13px}
+@media(max-width:760px){
+  .hero-grid,.grid,.projects{grid-template-columns:1fr}
+  h1{font-size:38px}
+  nav a{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">YOUR NAME</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">Available for Full-Time Remote Work</span>
+      <h1>Computer & Administrative Support with Data Management Skills</h1>
+      <p class="lead">
+        IT student with a background in Computer Management Technology,
+        customer service experience, and practical computer skills.
+        I am organized, detail-oriented, dependable, and eager to grow in a remote work environment.
+      </p>
+      <a class="btn" href="#projects">View My Work</a>
+    </div>
+    <div class="card profile-card">
+      <div class="avatar">YN</div>
+      <h2>Your Name</h2>
+      <p>IT Student • Computer Support • Administrative Support</p>
+      <p><strong>Based in the Philippines</strong></p>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2>About Me</h2>
+      <p class="lead">A reliable beginner professional building experience in online work.</p>
+    </div>
+    <div class="card">
+      <p>
+        I am an IT student with a background in Computer Management Technology and
+        experience in customer service and sales. I am interested in remote opportunities
+        involving administrative support, data management, customer service, internet research,
+        and other computer-related tasks.
+      </p>
+      <p>
+        I follow instructions carefully, pay attention to details, communicate professionally,
+        and am willing to learn new tools and processes. My goal is to build a long-term
+        professional relationship with an employer while continuously improving my skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head">
+      <h2>Skills</h2>
+      <p class="lead">Tools and skills I can use or continue developing.</p>
+    </div>
+    <div class="grid">
+      <div class="skill"><h3>Data & Admin</h3><span class="tag">Data Entry</span><span class="tag">File Management</span><span class="tag">Internet Research</span><span class="tag">Administrative Support</span></div>
+      <div class="skill"><h3>Productivity</h3><span class="tag">Microsoft Word</span><span class="tag">Microsoft Excel</span><span class="tag">Google Docs</span><span class="tag">Google Sheets</span></div>
+      <div class="skill"><h3>Technical</h3><span class="tag">Basic HTML</span><span class="tag">Basic CSS</span><span class="tag">Computer Skills</span><span class="tag">Basic Web Development</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head">
+      <h2>Selected Projects</h2>
+      <p class="lead">Sample work can be added here as you complete projects.</p>
+    </div>
+    <div class="projects">
+      <div class="card project">
+        <h3>Responsive Shopping Website</h3>
+        <p>A school web-development project using HTML and CSS with a responsive layout, navigation, product sections, and contact/footer areas.</p>
+        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive Design</span>
+      </div>
+      <div class="card project">
+        <h3>Data Management Sample</h3>
+        <p>A sample spreadsheet demonstrating organized data entry, formatting, sorting, filtering, and basic spreadsheet management.</p>
+        <span class="tag">Excel</span><span class="tag">Google Sheets</span><span class="tag">Data Management</span>
+      </div>
+      <div class="card project">
+        <h3>Administrative Task Sample</h3>
+        <p>A sample workflow showing organized file naming, document formatting, task tracking, and basic internet research.</p>
+        <span class="tag">Research</span><span class="tag">Documents</span><span class="tag">Organization</span>
+      </div>
+      <div class="card project">
+        <h3>Customer Service Experience</h3>
+        <p>Experience assisting customers, handling transactions, following procedures, communicating clearly, and working efficiently in a team environment.</p>
+        <span class="tag">Customer Service</span><span class="tag">Communication</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="card">
+      <h2>Education</h2>
+      <h3>Bachelor's Degree in Information Technology</h3>
+      <p>Currently studying — 3rd Year</p>
+      <h3>Computer Management Technology</h3>
+      <p>TESDA background / training</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Let's Work Together</h2>
+    <p>I am open to full-time remote opportunities in administrative support, data management, customer service, and entry-level IT-related work.</p>
+    <p><strong>Email:</strong> YOUR_EMAIL@example.com</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Your Name • Portfolio
+</footer>
+
+</body>
+</html>
